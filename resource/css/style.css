@@ -112,7 +112,8 @@ input[type=submit]
     text-transform: uppercase;
 }
 
-.main-nav li a:link, .main-nav li a:visited {
+.main-nav li a:link, 
+.main-nav li a:visited {
     text-decoration: none;
     color: #fff;
     transition: border-bottom 0.1s;
@@ -126,6 +127,30 @@ input[type=submit]
     width: auto;
     float: left;
 }
+.sticky-nav .main-nav li a:link, 
+.sticky-nav .main-nav li a:visited {
+    color:#555;
+    padding: 5px 0;
+}
+
+.sticky-nav {
+    position:fixed;
+    left: 0;
+    top: 0;
+    background-color: rbga(255,255,255,.8);
+    width: 100%;
+    box-shadow: 0 2px 2pz #efefef;
+}
+
+.sticky-nav .logo {
+    height: 60px;
+    margin-top: 3px;
+}
+
+.sticky-nav .main-nav {
+    margin-top: 18px;
+}
+
 
 .laptop-image {
     width: 80%;
@@ -487,4 +512,5 @@ footer p {
     margin-top: 50px;
     line-height: 1.5;
 }
+
 
